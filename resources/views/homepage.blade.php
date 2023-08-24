@@ -4,5 +4,7 @@
         <x-homepage.first-section /> 
         {{-- Products Section --}}
         <x-homepage.products-section />
- </div>
+        {{-- Find us section --}}
+        <x-homepage.findus-section />
+        </div>
     </x-layout>
