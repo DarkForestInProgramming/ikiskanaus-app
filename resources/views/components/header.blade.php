@@ -11,6 +11,7 @@
             <a href="#" class="hover:text-gray-300">Kebabai</a>
             <a href="#" class="hover:text-gray-300">Užkandžiai</a>
             <a href="#" class="hover:text-gray-300">Kontaktai</a>
+            
         </div>
         <div class="md:flex hidden space-x-6 ml-auto">
             <a href="#" class="hover:text-gray-300">Registracija</a>
@@ -19,13 +20,13 @@
     </div>
     {{-- Mobile --}}
     <div class="md:hidden bg-white text-grey mt-2 mobile-menu hidden">
-        <div class="container mx-auto p-4 space-y-2">
+        <div class="container mx-auto p-4 space-y-2 text-center">
             <a href="#" class="block hover:text-gray-300">Pagrindinis</a>
             <a href="#" class="block hover:text-gray-300">Kebabai</a>
             <a href="#" class="block hover:text-gray-300">Užkandžiai</a>
             <a href="#" class="block hover:text-gray-300">Kontaktai</a>
             <a href="#" class="block hover:text-gray-300">Registracija</a>
-            <a href="#" class="block hover:text-gray-300">Prisiungimas</a>
+            <a href="#" class="block hover:text-gray-300">Prisijungimas</a>
         </div>
     </div>
 </div>

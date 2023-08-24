@@ -1,5 +1,8 @@
 <x-layout>
-    <div class="h-screen">
-        <x-homepage.first-section />     
-</div>
+    <div>
+        {{-- Our Best Section --}}
+        <x-homepage.first-section /> 
+        {{-- Products Section --}}
+        <x-homepage.products-section />
+ </div>
     </x-layout>
