@@ -1,4 +1,4 @@
-<div class="header__main bg-white text-grey text-2xl py-4">
+<div class="header__main bg-white text-grey text-2xl py-4 relative z-10 shadow-md">
     <div class="container mx-auto px-4 md:px-0 flex justify-between items-center">
         <div class="flex items-center">
             <img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1674554370/IkiSkanaus/kursinis_logo_yfv2zl.png" alt="Logo" class="mr-4">
