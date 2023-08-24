@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header__main {
+    font-family: "Caveat", cursive;
+}
+
+.footer__main {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
