@@ -10,3 +10,7 @@ body,
 .footer__main {
     font-family: "Yanone Kaffeesatz", sans-serif;
 }
+
+.card__title {
+    font-family: "Caveat", cursive;
+}
