@@ -3,8 +3,8 @@
  <x-meniupage.news-section />
     {{-- Meniu header --}}
      <x-meniupage.meniu-header />
-    {{-- Products --}}
-    <x-meniupage.meniu-products />
+    {{-- Kebabs --}}
+    <x-meniupage.meniu-kebabs :kebabs="$kebabs" />
     {{-- Sauces --}}
     <x-meniupage.meniu-sauces />
 </x-layout>

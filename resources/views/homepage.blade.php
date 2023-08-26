@@ -2,8 +2,8 @@
     <div>
         {{-- Our Best Section --}}
         <x-homepage.first-section /> 
-        {{-- Products Section --}}
-        <x-homepage.products-section />
+        {{-- Kebabs Section --}}
+        <x-homepage.kebabs-section :kebabs="$kebabs"/>
         {{-- Find us section --}}
         <x-homepage.findus-section />
         </div>

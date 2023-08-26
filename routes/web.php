@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KebabController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
-
-
-Route::get('/meniu', function () {
-    return view('meniupage');
-});
+// Kebab assiocated routes
+Route::get('/', [KebabController::class, 'index']);
+Route::get('/meniu', [KebabController::class, 'meniu']);
 
