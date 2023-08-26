@@ -14,3 +14,9 @@ body,
 .card__title {
     font-family: "Caveat", cursive;
 }
+
+/* Homepage first section */
+
+.one:hover span:last-child {
+    width: 100%;
+}
