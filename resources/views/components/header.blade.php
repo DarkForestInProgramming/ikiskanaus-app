@@ -14,8 +14,8 @@
             
         </div>
         <div class="md:flex hidden space-x-6 ml-auto">
-            <a href="#" class="hover:text-gray-300">Registracija</a>
-            <a href="#" class="hover:text-gray-300">Prisijungimas</a>
+            <a href="/register" class="hover:text-gray-300">Registracija</a>
+            <a href="/login" class="hover:text-gray-300">Prisijungimas</a>
         </div>
     </div>
     {{-- Mobile --}}
@@ -23,8 +23,8 @@
         <div class="container mx-auto p-4 space-y-2 text-center">
             <a href="/" class="block hover:text-gray-300">Pagrindinis</a>
             <a href="/meniu" class="block hover:text-gray-300">Kebabai</a>
-            <a href="#" class="block hover:text-gray-300">Registracija</a>
-            <a href="#" class="block hover:text-gray-300">Prisijungimas</a>
+            <a href="/register" class="block hover:text-gray-300">Registracija</a>
+            <a href="/login" class="block hover:text-gray-300">Prisijungimas</a>
         </div>
     </div>
 </div>
