@@ -6,5 +6,5 @@
     {{-- Kebabs --}}
     <x-meniupage.meniu-kebabs :kebabs="$kebabs" />
     {{-- Sauces --}}
-    <x-meniupage.meniu-sauces />
+    <x-meniupage.meniu-sauces :sauces="$sauces" />
 </x-layout>
