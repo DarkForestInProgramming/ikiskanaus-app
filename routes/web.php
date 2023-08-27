@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\KebabController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserAuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KebabController;
+use App\Http\Controllers\MyProfileController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,9 @@ Route::get('/', [KebabController::class, 'index'])->name('home.page');
 Route::get('/meniu', [KebabController::class, 'meniu'])->name('meniu.page');
 
 // User assiocated routes
-Route::get('/register', [UserController::class, 'showRegister'])->name('show.register');
-Route::post('/register', [UserController::class, 'postRegister'])->name('post.register');
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/register', [RegisterController::class, 'showRegister'])->name('show.register');
+Route::post('/register', [RegisterController::class, 'postRegister'])->name('post.register');
+Route::get('/login', [UserAuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [UserAuthController::class, 'postLogin'])->name('post.login');
+Route::post('/logout', [UserAuthController::class, 'logout'])->name('logout');
+Route::get('/myprofile', [MyProfileController::class, 'index'])->name('myprofile')->middleware('auth');
