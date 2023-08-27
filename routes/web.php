@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Kebab assiocated routes
-Route::get('/', [KebabController::class, 'index']);
-Route::get('/meniu', [KebabController::class, 'meniu']);
+Route::get('/', [KebabController::class, 'index'])->name('home.page');
+Route::get('/meniu', [KebabController::class, 'meniu'])->name('meniu.page');
 
 // User assiocated routes
-Route::get('/register', [UserController::class, 'register']);
+Route::get('/register', [UserController::class, 'showRegister'])->name('show.register');
+Route::post('/register', [UserController::class, 'postRegister'])->name('post.register');
 Route::get('/login', [UserController::class, 'login']);
