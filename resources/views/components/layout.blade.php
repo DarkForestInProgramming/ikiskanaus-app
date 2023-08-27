@@ -9,16 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-{{-- Next font   --}}
-<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <x-header />
+  {{-- Header --}}
+  <x-header.header />
+  {{-- Main content --}}
   <main>
     {{$slot}}
   </main>
-  <x-footer />
+  {{-- Footer --}}
+  <x-footer.footer />
+
+  {{-- Scripts --}}
   {{-- Header for mobile functional logic --}}
   <script>
     document.addEventListener('DOMContentLoaded', function() {
