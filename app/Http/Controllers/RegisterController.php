@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UserRegistrationRequest;
-use App\Services\UserRegistrationService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Services\UserRegistrationService;
+use App\Http\Requests\UserRegistrationRequest;
 
 class RegisterController extends Controller
 {
@@ -30,7 +31,9 @@ class RegisterController extends Controller
         ];
     
         $user = $registrationService->registerUser($data);
-    
-        return redirect()->route('login')->with('successMessage', 'Jūsų paskyra sėkmingai sukurta!');
+        Auth::login($user);
+        $user->sendEmailVerificationNotification();
+        return redirect()->route('verification.notice')->with('successMessage', 'Jūsų paskyra sėkmingai sukurta!');
     }
 }
+
