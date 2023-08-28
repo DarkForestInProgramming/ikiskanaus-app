@@ -28,7 +28,7 @@ Route::get('/login', [UserAuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [UserAuthController::class, 'postLogin'])->name('post.login');
 Route::post('/logout', [UserAuthController::class, 'logout'])->name('logout');
 Route::get('/myprofile', [MyProfileController::class, 'index'])->middleware('verified')->name('myprofile');
-Route::get('/verify', [MyProfileController::class, 'verify'])->name('verification.notice');
+Route::get('/verify', [MyProfileController::class, 'verify'])->name('verification.notice')->middleware(['auth']);
 Route::get('/resend/verification/email', [MyProfileController::class, 'resend'])->name('resend.email');
 Route::get('/email/verify/{id}/{hash}', [MyProfileController::class, 'emailVerificationReq'])->middleware(['auth', 'signed'])->name('verification.verify');
 
