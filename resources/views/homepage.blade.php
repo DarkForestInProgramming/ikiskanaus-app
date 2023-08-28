@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout doctitle="Pagrindinis">
     <div>
         {{-- Our best section --}}
         <x-homepage.first-section /> 

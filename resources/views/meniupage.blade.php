@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout doctitle="Meniu">
  {{-- News section --}}
  <x-meniupage.news-section />
     {{-- Meniu header --}}
