@@ -14,7 +14,7 @@ class MyProfileController extends Controller
      
     public function verify()
     {
-        return view('verifypage');
+        return view('verifyPage');
     }
 
     public function resend()
