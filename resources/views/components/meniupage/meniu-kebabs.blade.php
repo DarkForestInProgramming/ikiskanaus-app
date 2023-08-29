@@ -7,7 +7,7 @@
             <h3 class="card__title text-3xl mb-2">"{{$kebab->title}}"</h3>
             <p class="text-gray-600 mb-2 text-lg">{{$kebab->description}}</p>
             <p class="text-red-600 font-semibold mb-2 text-xl">{{$kebab->price}} €</p>
-            <button class="px-4 py-2 text-red-100 border bg-red-500 rounded-full hover:bg-white hover:text-red-500 hover:border-red-500 transition duration-300">+ Pridėti Į Krepšelį</button>
+            <a href="{{route('add_to_cart', $kebab->id)}}" class="mt-2 px-4 py-2 text-lg font-bold text-red-100 border bg-red-500 rounded-full hover:bg-white hover:text-red-500 hover:border-red-500 transition duration-300 shadow-md">+ Pridėti Į Krepšelį</a>
         </div> 
         @endforeach
     </div>
