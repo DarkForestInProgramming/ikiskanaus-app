@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KebabController;
 use App\Http\Controllers\MyProfileController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\StripeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,13 @@ Route::get('/verify', [MyProfileController::class, 'verify'])->name('verificatio
 Route::get('/resend/verification/email', [MyProfileController::class, 'resend'])->name('resend.email');
 Route::get('/email/verify/{id}/{hash}', [MyProfileController::class, 'emailVerificationReq'])->middleware(['auth', 'signed'])->name('verification.verify');
 
+// Cart assiocated routes
+Route::get('cart', [KebabController::class, 'cart'])->name('cart');
+Route::get('add-to-cart/{id}', [KebabController::class, 'addToCart'])->name('add_to_cart');
+Route::delete('remove-from-cart', [KebabController::class, 'remove'])->name('remove_from_cart');
+Route::patch('update-cart', [KebabController::class, 'update'])->name('update_cart');
 
+// Payment assiocated routes
+Route::post('/session', [StripeController::class, 'session'])->name('session')->middleware(['verified']);
+Route::get('/success', [StripeController::class, 'success'])->name('success');
+Route::get('/cancel', [StripeController::class, 'cancel'])->name('cancel');
