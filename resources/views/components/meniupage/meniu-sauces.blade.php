@@ -1,5 +1,6 @@
 <div class="container mx-auto text-center py-10">
-    <h2 class="text-2xl font-semibold mb-4 relative three">Padažų pasirinkimas</h2>
+    <h2 class="text-2xl font-semibold relative three">Naudojami padažai</h2>
+    <p class="text-sm mb-4">(Pasirenkama vietoje)</p>
     <div class="flex justify-center space-x-8 py-2">
         @foreach($sauces as $sauce)
         <div class="flex flex-col items-center">
