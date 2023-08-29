@@ -10,5 +10,7 @@
         <a href="/meniu">
             <button class="mt-2 px-4 py-2 text-lg mb-3 text-red-200 border border-red-500 rounded-full hover:bg-red-500 hover:text-white transition duration-300">Spausk čia</button>
         </a>
+            {{-- Success message after adding kebab to shopping cart --}}
+    <div class="text-center"><x-loginpage.message /></div>
     </div>
 </div>
