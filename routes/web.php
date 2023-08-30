@@ -43,5 +43,5 @@ Route::patch('update-cart', [ShoppingCartController::class, 'updateCartQuantity'
 
 // Payment assiocated routes
 Route::post('/session', [StripeController::class, 'session'])->middleware(['verified'])->name('session');
-Route::get('/success', [StripeController::class, 'paymentSuccess'])->name('success');
-Route::get('/cancel', [StripeController::class, 'paymentCancel'])->name('cancel');
+Route::get('/success', [StripeController::class, 'paymentSuccess'])->middleware(['auth'])->name('success');
+Route::get('/cancel', [StripeController::class, 'paymentCancel'])->middleware(['auth'])->name('cancel');
