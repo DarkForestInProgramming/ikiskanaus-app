@@ -2,11 +2,11 @@
     <table class="w-full bg-gray-100 mx-auto">
         <thead>
             <tr class="bg-white">
-                <th class=" py-2 px-4">Kebabas</th>
-                <th class=" py-2 px-4">Kaina</th>
-                <th class=" py-2 px-4">Vnt.</th>
-                <th class=" px-4">Bendrai</th>
-                <th class=" px-4">Veiksmai</th>
+                <th class="py-2 px-4">Kebabas</th>
+                <th class="py-2 px-4">Kaina</th>
+                <th class="py-2 px-4">Vnt.</th>
+                <th class="px-4">Bendrai</th>
+                <th class="px-4">Veiksmai</th>
             </tr>
         </thead>
         <tbody class="text-center">
