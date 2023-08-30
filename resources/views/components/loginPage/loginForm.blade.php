@@ -3,7 +3,7 @@
         {{-- Certain message toast --}}
         <x-shared.globalMsg />
         <h2 class="text-2xl font-bold mb-4">Prisijungimas</h2>
-        <form action="{{route('post.login')}}" method="POST">
+        <form action="{{route('post_login')}}" method="POST">
             @csrf
             <div class="mb-4">
                 <label for="email" class="block text-sm font-medium text-gray-700">El. paštas</label>

@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class StripeController extends Controller
 {
     public function session()
     {
-         $user = auth()->user();
+        $user = auth()->user();
         $productItems = [];
 
         \Stripe\Stripe::setApiKey(config('stripe.sk'));
@@ -20,8 +18,6 @@ class StripeController extends Controller
             $picture = $details['picture'];
             $total = $details['price'];
             $quantity = $details['quantity'];
-
-           
             $unit_amount = $total * 100;
             
             $productItems[] = [
@@ -56,13 +52,13 @@ class StripeController extends Controller
 
     }
 
-    public function success()
+    public function paymentSuccess()
     {
         session()->forget('cart'); 
         return view('successPage');
     }
 
-    public function cancel()
+    public function paymentCancel()
     {
         session()->forget('cart'); 
         return view('cancelPage');

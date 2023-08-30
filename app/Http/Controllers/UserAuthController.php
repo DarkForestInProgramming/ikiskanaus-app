@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use App\Services\UserLoginService;
-use Illuminate\Http\Request;
 
 class UserAuthController extends Controller
 {
@@ -22,7 +21,7 @@ class UserAuthController extends Controller
     $credentials = request()->only('email', 'password');
     
     if ($loginService->attemptLogin($credentials)) {
-        return redirect()->route('myprofile');
+        return redirect()->route('my_profile');
     } else {
         return back()->with('errorMessage', 'Vartotojo vardas arba slaptažodis yra neteisingi');
     }

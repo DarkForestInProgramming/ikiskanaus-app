@@ -7,16 +7,16 @@
     <a href="#" class="hover:text-gray-300 mobile-menu-button">☰</a>
 </div>
 <div class="hidden md:flex space-x-6 ml-auto">
-    <a href="{{ route('home.page') }}" class="hover:text-gray-300">Pagrindinis</a>
-    <a href="{{ route('meniu.page') }}" class="hover:text-gray-300">Meniu</a>
+    <a href="{{ route('home_page') }}" class="hover:text-gray-300">Pagrindinis</a>
+    <a href="{{ route('meniu_page') }}" class="hover:text-gray-300">Meniu</a>
 </div>    
 <div class="md:flex hidden space-x-6 ml-auto">
     @if (!Auth::check())
-    <a href="{{ route('show.register') }}" class="hover:text-gray-300">Registracija</a>
+    <a href="{{ route('show_register') }}" class="hover:text-gray-300">Registracija</a>
     <a href="{{ route('login') }}" class="hover:text-gray-300">Prisijungimas</a>
     @endif
     @if (Auth::check())
-    <a href="{{ route('myprofile') }}" class="hover:text-gray-300">Mano paskyra</a>
+    <a href="{{ route('my_profile') }}" class="hover:text-gray-300">Mano paskyra</a>
     <form action="{{ route('logout') }}" method="POST">
         @csrf
         <button class="hover:text-gray-300">Atsijungti</button>

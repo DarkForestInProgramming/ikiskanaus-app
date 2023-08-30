@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class MyProfileController extends Controller
@@ -17,17 +16,17 @@ class MyProfileController extends Controller
         return view('verifyPage');
     }
 
-    public function resend()
+    public function resendEmail()
     {
         $user = Auth::user();
 
         if($user->hasVerifiedEmail())
         {
-            return redirect()->route('home.page')->with('successMessage', 'Jūsų el. paštas sėkmingai patvirtintas');
+            return redirect()->route('home_page')->with('successMessage', 'Jūsų el. paštas sėkmingai patvirtintas');
         }
 
         $user->sendEmailVerificationNotification();
-        return back()->with('successMessage', 'Patvirtinimo nuoroda sėkmingai išsiųsta į Jūsų el. paštą');
+        return back()->with('successMessage', 'Patvirtinimo nuoroda sėkmingai dar kartą išsiųsta į Jūsų el. paštą');
     }
 
     public function emailVerificationReq(EmailVerificationRequest $req)

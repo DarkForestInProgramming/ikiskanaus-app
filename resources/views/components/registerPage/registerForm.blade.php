@@ -1,7 +1,7 @@
 <div class="flex flex-col justify-center items-center py-10">
     <div class="w-full md:w-1/3 bg-white p-6">
         <h2 class="text-2xl font-bold mb-4">Registracija</h2>
-        <form action="{{route('post.register')}}" method="POST">
+        <form action="{{route('post_register')}}" method="POST">
             @csrf
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Vartotojo vardas</label>
