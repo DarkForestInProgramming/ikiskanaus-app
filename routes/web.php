@@ -38,8 +38,8 @@ Route::get('/email/verify/{id}/{hash}', [MyProfileController::class, 'emailVerif
 // Cart assiocated routes
 Route::get('cart', [ShoppingCartController::class, 'cart'])->name('cart');
 Route::get('add-to-cart/{id}', [ShoppingCartController::class, 'addToCart'])->name('add_to_cart');
-Route::delete('remove-from-cart', [ShoppingCartController::class, 'removeCart'])->name('remove_from_cart');
-Route::patch('update-cart', [ShoppingCartController::class, 'updateCart'])->name('update_cart');
+Route::delete('remove-from-cart', [ShoppingCartController::class, 'removeFromCart'])->name('remove_from_cart');
+Route::patch('update-cart', [ShoppingCartController::class, 'updateCartQuantity'])->name('update_cart');
 
 // Payment assiocated routes
 Route::post('/session', [StripeController::class, 'session'])->middleware(['verified'])->name('session');

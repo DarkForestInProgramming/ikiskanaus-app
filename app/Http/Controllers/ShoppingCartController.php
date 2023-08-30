@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kebab;
+use App\Services\ShoppingCartService;
+use Illuminate\Http\Request;
 
 class ShoppingCartController extends Controller
 {
+    protected $shoppingCartService;
+
+    public function __construct(ShoppingCartService $shoppingCartService)
+    {
+        $this->shoppingCartService = $shoppingCartService;
+    }
+
     public function cart()
     {
         return view('cartPage');
@@ -13,48 +21,19 @@ class ShoppingCartController extends Controller
 
     public function addToCart($id)
     {
-        $kebab = Kebab::findOrFail($id);
-
-        $cart = session()->get('cart', []);
-
-        if(isset($cart[$id]))
-        {
-            $cart[$id]['quantity']++;
-        } else {
-            $cart[$id] = [
-                'title' => $kebab->title,
-                'description' => $kebab->description,
-                'price' => $kebab->price,
-                'picture' => $kebab->picture,
-                'quantity' => 1,
-            ];
-        }
-        session()->put('cart', $cart);
+        $this->shoppingCartService->addToCart($id);
         return redirect()->back()->with('successMessage', 'Kebabas sėkmingai pridėtas į prekių krepšelį!');
     }
 
-    public function removeCart()
+    public function removeFromCart(Request $request)
     {
-        if(request()->id)
-        {
-            $cart = session()->get('cart');
-            if(isset($cart[request()->id]))
-            {
-                unset($cart[request()->id]);
-                session()->put('cart', $cart);
-            }
-            session()->flash('successMessage', 'Kebabas sėkmingai pašalintas!');
-        }
+        $this->shoppingCartService->removeFromCart($request->id);
+        session()->flash('successMessage', 'Kebabas sėkmingai pašalintas!');
     }
 
-    public function updateCart()
+    public function updateCartQuantity(Request $request)
     {
-        if(request()->id && request()->quantity)
-        {
-            $cart = session()->get('cart');
-            $cart[request()->id]["quantity"] = request()->quantity;
-            session()->put('cart', $cart);
-            session()->flash('successMessage', 'Kebabų kiekis sėkmingai pakeistas!');
-        }
+        $this->shoppingCartService->updateCartQuantity($request->id, $request->quantity);
+        session()->flash('successMessage', 'Kebabų kiekis sėkmingai pakeistas!');
     }
 }
