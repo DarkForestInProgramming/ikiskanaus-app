@@ -2,12 +2,12 @@
     <!-- Shopping cart button -->
    <x-header.large-cartbutton />
     <!-- Dropdown menu -->
-    <div id="cart-dropdown" class="hidden group-hover:block absolute right-0 mt-2 py-2 w-80 bg-white border border-gray-300 rounded-lg shadow-md">
+    <div id="cart-dropdown" class="large__cartmenu hidden group-hover:block absolute right-0 mt-2 py-2 w-80 bg-white border border-gray-300 text-xl rounded-lg shadow-md">
         @php $total = 0 @endphp
         @foreach((array) session('cart') as $id => $details)
             @php $total += $details['price'] * $details['quantity'] @endphp
         @endforeach
-        <div class="px-4 py-2 mb-1 font-semibold">
+        <div class="px-4 py-2 mb-1 font-semibold text-xl">
             Prekių krepšelis
         </div>
         <!-- Products listing -->
@@ -15,12 +15,12 @@
             <!-- Products information -->
             @if(session('cart'))
                 @foreach(session('cart') as $id => $details)
-                    <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-2 l">
                         <img src="{{$details['picture']}}" alt="{{$details['title']}}" class="w-8 h-8 rounded-md">
                         <div class="flex-grow">
                             <div class="font-semibold">"{{$details['title']}}"</div>
                             <div class="text-gray-500">Vnt. kaina: 
-                                <span class="text-red-500"> {{$details['price']}} €</span>
+                                <span class="text-red-500 font-semibold"> {{$details['price']}} €</span>
                                
                             </div>
                             <div class="flex-shrink mb-5">
@@ -34,7 +34,7 @@
         </div>
         <div class="text-end">
              <!-- Total price -->
-             <div class="px-4 py-2 font-semibold">
+             <div class="px-4 py-2 font-semibold ">
                 Iš viso:
                 <span class="text-red-500">{{$total}} €</span>
             </div>
