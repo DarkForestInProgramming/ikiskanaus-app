@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Order;
 
 class MyProfileController extends Controller
 {
     public function index()
     {
-        return view('myProfilePage');
+        $user = Auth::user();
+        $orders = Order::where('user_id', $user->id)->get();
+    
+        return view('myProfilePage', compact('orders'));
     }
      
     public function verify()
