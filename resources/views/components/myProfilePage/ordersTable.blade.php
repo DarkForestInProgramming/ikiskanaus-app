@@ -1,5 +1,6 @@
 <div class="flex flex-col justify-center items-center py-10">
-    <x-loginpage.message />
+{{-- Certain message toast  --}}
+    <x-shared.globalMsg />
     <h2 class="text-2xl font-bold mb-4">Mano paskyra</h2>
     <p class="text-xl mb-4">Sveiki, {{auth()->user()->name}}!</p>
     <div class="w-full max-w-lg bg-white p-6 mt-4">

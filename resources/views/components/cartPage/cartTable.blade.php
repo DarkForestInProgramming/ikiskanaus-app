@@ -39,4 +39,4 @@
     </table>
 </div>
 {{-- Pay, back buttons --}}
-<x-cartpage.cart-buttons :total="$total"/>
+<x-cartpage.cartBtns :total="$total"/>

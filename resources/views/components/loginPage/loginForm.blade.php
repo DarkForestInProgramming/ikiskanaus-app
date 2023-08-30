@@ -1,6 +1,7 @@
 <div class="flex flex-col justify-center items-center py-10">
     <div class="w-full md:w-1/3 bg-white p-6">
-        <x-loginpage.message />
+        {{-- Certain message toast --}}
+        <x-shared.globalMsg />
         <h2 class="text-2xl font-bold mb-4">Prisijungimas</h2>
         <form action="{{route('post.login')}}" method="POST">
             @csrf
@@ -25,6 +26,7 @@
                 <button class="text-gray-100 border bg-gray-500 hover:text-red-500 transition duration-300 shadow-md rounded-lg px-4 py-2 mt-1 w-full">Registruotis</button>
             </a>
         </div>
-     <x-registerpage.info-section />
+        {{-- Info section --}}
+     <x-shared.infoFormSection />
     </div>
 </div>

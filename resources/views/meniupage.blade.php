@@ -1,10 +1,10 @@
 <x-layout doctitle="Meniu">
  {{-- News section --}}
- <x-meniupage.news-section />
+ <x-meniuPage.newsSection />
     {{-- Meniu header --}}
-     <x-meniupage.meniu-header />
+     <x-meniuPage.meniuHeader />
     {{-- Kebabs --}}
-    <x-meniupage.meniu-kebabs :kebabs="$kebabs" />
+    <x-meniuPage.meniuKebabs :kebabs="$kebabs" />
     {{-- Sauces --}}
-    <x-meniupage.meniu-sauces :sauces="$sauces" />
+    <x-meniuPage.meniuSauces :sauces="$sauces" />
 </x-layout>

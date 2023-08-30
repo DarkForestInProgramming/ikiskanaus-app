@@ -1,4 +1,4 @@
 <x-layout doctitle="Registracija">
     {{-- Register form --}}
-    <x-registerpage.register-form />
+    <x-registerPage.registerForm />
 </x-layout>

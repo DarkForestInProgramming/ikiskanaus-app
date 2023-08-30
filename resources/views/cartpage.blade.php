@@ -1,13 +1,13 @@
 <x-layout doctitle="Prekių krepšelis">
     <div class="container mx-auto py-10">
         {{-- Certain message toast --}}
-        <x-loginpage.message />
+        <x-shared.globalMsg />
         @php $cartIsEmpty = empty(session('cart')) @endphp
         {{-- Cart header --}}
-        <x-cartpage.cart-header :cartIsEmpty="$cartIsEmpty"/>
+        <x-cartPage.cartHeader :cartIsEmpty="$cartIsEmpty"/>
         @if (!$cartIsEmpty)
         {{-- Cart table --}}
-        <x-cartpage.cart-table/>
+        <x-cartPage.cartTable/>
         @endif
     </div>
 </x-layout>

@@ -6,7 +6,8 @@
                 Dabar galite visapusiškai naudotis savo paskyra ir jos funkcijomis.
             </p>
         @else
-            <x-loginpage.message />
+               {{-- Success message toast after registration --}}
+               <x-shared.globalMsg />
             <h2 class="text-2xl font-bold mb-4">Registracijos Patvirtinimas</h2>
             <p class="text-gray-600 mb-4">
                 Dėkojame už registraciją! Patvirtinimo nuoroda buvo išsiųsta į Jūsų nurodytą el. paštą. Prašome patikrinti savo el. paštą ir paspausti ant patvirtinimo nuorodos, kad užbaigtumėte registracijos procesą.

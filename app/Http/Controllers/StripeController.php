@@ -59,12 +59,12 @@ class StripeController extends Controller
     public function success()
     {
         session()->forget('cart'); 
-        return view('successpage');
+        return view('successPage');
     }
 
     public function cancel()
     {
         session()->forget('cart'); 
-        return view('cancelpage');
+        return view('cancelPage');
     }
 }

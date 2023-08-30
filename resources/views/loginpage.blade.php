@@ -1,4 +1,4 @@
 <x-layout doctitle="Prisijungimas">
     {{-- Login form --}}
-    <x-loginpage.login-form />
+    <x-loginPage.loginForm />
 </x-layout>

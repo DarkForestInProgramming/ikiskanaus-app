@@ -12,7 +12,7 @@ class KebabController extends Controller
     {
         $kebabs = Kebab::all();
 
-        return view('homepage', compact('kebabs'));
+        return view('homePage', compact('kebabs'));
     }
 
     
@@ -21,12 +21,12 @@ class KebabController extends Controller
         $kebabs = Kebab::all();
         $sauces = Sauce::all();
 
-        return view('meniupage', compact('kebabs', 'sauces'));
+        return view('meniuPage', compact('kebabs', 'sauces'));
     }
 
     public function cart()
     {
-        return view('cartpage');
+        return view('cartPage');
     }
 
     public function addToCart($id)

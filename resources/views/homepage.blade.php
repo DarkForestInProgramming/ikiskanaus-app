@@ -1,10 +1,10 @@
 <x-layout doctitle="Pagrindinis">
     <div>
         {{-- Our best section --}}
-        <x-homepage.first-section /> 
+        <x-homePage.openSection /> 
         {{-- Kebabs section --}}
-        <x-homepage.kebabs-section :kebabs="$kebabs"/>
+        <x-homePage.kebabsSection :kebabs="$kebabs"/>
         {{-- Find us section --}}
-        <x-homepage.findus-section />
+        <x-homePage.locationSection />
         </div>
     </x-layout>

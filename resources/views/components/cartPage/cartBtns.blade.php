@@ -20,6 +20,5 @@
             Apmokėti
         </button>
         @endif
-       
     </form>
 </div>

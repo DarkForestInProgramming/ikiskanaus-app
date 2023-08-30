@@ -22,8 +22,8 @@
         <button class="hover:text-gray-300">Atsijungti</button>
     </form>
     @endif
-{{-- Shopping cart --}}
+{{-- Large header shopping cart --}}
 @if (session('cart') && count(session('cart')) > 0)
-<x-header.large-cartmenu />
+<x-header.lgCartMenu />
 @endif
 </div>

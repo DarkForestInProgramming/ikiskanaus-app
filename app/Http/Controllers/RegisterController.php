@@ -18,7 +18,7 @@ class RegisterController extends Controller
 
     public function showRegister()
      {
-      return view('registerpage');
+      return view('registerPage');
      }
 
 

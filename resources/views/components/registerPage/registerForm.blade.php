@@ -26,8 +26,9 @@
             </div>
             <button type="submit" class="text-red-100 border bg-red-500 hover:bg-white hover:text-red-500 hover:border-red-500 transition duration-300 shadow-md rounded-lg px-4 py-2 w-full">Registruotis</button>
         </form>
+        {{-- Info section --}}
         <div class="py-3">
-             <x-registerpage.info-section />
+            <x-shared.infoFormSection />
         </div>
     </div>
     <div class="py-5 md:py-10">

@@ -9,7 +9,7 @@ class MyProfileController extends Controller
 {
     public function index()
     {
-        return view('myprofilepage');
+        return view('myProfilePage');
     }
      
     public function verify()

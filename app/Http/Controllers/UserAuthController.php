@@ -9,7 +9,7 @@ class UserAuthController extends Controller
 
     public function showLogin()
     {
-        return view('loginpage');
+        return view('loginPage');
     }
 
     public function postLogin(UserLoginService $loginService)
