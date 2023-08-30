@@ -34,7 +34,7 @@
                 <span class="text-red-500">{{$total}} €</span>
             </div>
         <div class="px-4 py-1">
-            <a href="{{route('cart')}}" class="w-full bg-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600">Tęsti pirkimą</a>
+            <a href="{{route('cart')}}" class="w-full bg-red-500 text-white px-4 py-1 rounded-md hover:bg-red-600">Toliau</a>
         </div>
     </div>
     </div>
