@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Services\StripeService;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Order; 
 
 class StripeController extends Controller
 {
@@ -26,8 +27,11 @@ class StripeController extends Controller
 
     public function paymentSuccess()
     {
+        $user = Auth::user();
+        $orders = Order::where('user_id', $user->id)->get();
+
         session()->forget('cart'); 
-        return view('successPage');
+        return view('successPage', compact('orders'));
     }
 
     public function paymentCancel()
