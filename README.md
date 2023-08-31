@@ -1,66 +1,151 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1674554370/IkiSkanaus/kursinis_logo_yfv2zl.png" alt="Logo">
+  </a>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <h3 align="center">"IkiSkanaus" Kebab Ordering Application</h3>
 
-## About Laravel
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<!-- ABOUT THE PROJECT -->
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About The Project
 
-## Learning Laravel
+The Kebab Ordering App "IkiSkanaus" is designed and oriented toward the customer, allowing them to place kebab orders online without needing a phone call. Therefore, within the application, users can register, log in after confirming their email, add desired kebabs to their shopping cart, securely complete the payment using the Stripe platform, and review past orders within their profile. Additionally, the project was developed with the purpose of learning the "Laravel" framework and the "PHP" language.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Pictures of the project:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Main page:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693482985/IkiSkanaus/ikiskanaus-laravel/home_1_ijbx57.png" width="1190"/>
 
-## Laravel Sponsors
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693482985/IkiSkanaus/ikiskanaus-laravel/home_2_b2vrah.png" width="1190"/>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693482985/IkiSkanaus/ikiskanaus-laravel/home_3_jjjg6n.png" width="1190"/>
 
-### Premium Partners
+### Registration page:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483108/IkiSkanaus/ikiskanaus-laravel/register_cwbt8m.png" width="1190"/>
 
-## Contributing
+### Email confirmation page:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483108/IkiSkanaus/ikiskanaus-laravel/confirm_email_nfwknh.png" width="1190"/>
 
-## Code of Conduct
+### Confirmation email:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483108/IkiSkanaus/ikiskanaus-laravel/email_confirmation_cqqjku.png" width="1190"/>
 
-## Security Vulnerabilities
+### Login page:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483108/IkiSkanaus/ikiskanaus-laravel/login_yr4xhw.png" width="1190"/>
 
-## License
+### Header shopping cart:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483322/IkiSkanaus/ikiskanaus-laravel/header_cart_dr2oz9.png" width="1190"/>
+
+### Shopping cart page:
+
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483322/IkiSkanaus/ikiskanaus-laravel/shopping_cart_xjfvuf.png" width="1190"/>
+
+### Stripe payment:
+
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483518/IkiSkanaus/ikiskanaus-laravel/stripe_payment_fb2w9m.png" width="1190"/>
+
+### Successful payment page:
+
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483518/IkiSkanaus/ikiskanaus-laravel/successfull_payment_ccvwgw.png" width="1190"/>
+
+### My profile page:
+
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483574/IkiSkanaus/ikiskanaus-laravel/my_profile_akkusb.png" width="1190"/>
+
+
+### Built With
+
+Used frameworks, libraries, and database in this project:
+
+### Used technologies:
+
+- Laravel
+
+- Tailwind CSS
+
+- Stripe PHP
+
+- MySQL
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is an instruction on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+Install the latest npm.
+
+- npm
+  ```sh
+  npm i npm@latest -g
+  ```
+
+### Installation
+
+_Below are instructions on how you need to start the project._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/DarkForestInProgramming/ikiskanaus-app.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm i
+   ```
+3. Add environment variables
+
+   ```
+   In the .env file add your database, mailer data, stripe key, and secret.
+   
+   ```
+
+4. Start project
+
+   ```
+   php artisan serve
+   npm run dev
+
+   ```
+
+
+<!-- CONTACT -->
+
+## Contact
+
+Šipelis, D. - [@Linkedin](https://www.linkedin.com/in/deividas-%C5%A1ipelis-15a070212/) - sipelis.d@gmail.com
+
+Project Link: [https://github.com/DarkForestInProgramming/ikiskanaus-app](https://github.com/DarkForestInProgramming/ikiskanaus-app)
+
