@@ -46,6 +46,12 @@ Pictures of the project:
 
 <img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693482985/IkiSkanaus/ikiskanaus-laravel/home_3_jjjg6n.png" width="1190"/>
 
+### Meniu page:
+
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693487422/IkiSkanaus/ikiskanaus-laravel/menu_1_wlwnoy.png" width="1190"/>
+
+<img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693487422/IkiSkanaus/ikiskanaus-laravel/menu_2_nw1b0f.png" width="1190"/>
+
 ### Registration page:
 
 <img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1693483108/IkiSkanaus/ikiskanaus-laravel/register_cwbt8m.png" width="1190"/>
