@@ -1,12 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://res.cloudinary.com/dp0m5mp1s/image/upload/v1674554370/IkiSkanaus/kursinis_logo_yfv2zl.png" alt="Logo">
-  </a>
-
   <h3 align="center">"IkiSkanaus" Kebab Ordering Application</h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -127,8 +123,9 @@ _Below are instructions on how you need to start the project._
    ```sh
    git clone https://github.com/DarkForestInProgramming/ikiskanaus-app.git
    ```
-2. Install NPM packages
+2. Install packages
    ```sh
+   composer install
    npm i
    ```
 3. Add environment variables
@@ -141,8 +138,8 @@ _Below are instructions on how you need to start the project._
 4. Start project
 
    ```
-   php artisan serve
    npm run dev
+   php artisan serve
 
    ```
 
